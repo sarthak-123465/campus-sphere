@@ -31,6 +31,7 @@ export const login = (data) => async (dispatch) => {
     localStorage.setItem("firstLogin", true);
     dispatch({ type: GLOBALTYPES.ALERT, payload: { success: res.data.msg } });
   } catch (err) {
+    console.log(err)
     dispatch({
       type: GLOBALTYPES.ALERT,
       payload: { error: err.response.data.msg },
