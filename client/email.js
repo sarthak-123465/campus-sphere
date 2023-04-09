@@ -8,9 +8,9 @@ const sendVerificationEmail = (email, token) => {
     from: 'no-reply@your-app.com',
     subject: 'Verify your email address',
     text: `Please click the following link to verify your email address:
-    http://localhost:3000/verify/${token}`,
+    https://campus-sphere.onrender.com/verify/${token}`,
     html: `<p>Please click the following link to verify your email address:</p>
-    <p><a href="http://localhost:3000/verify/${token}">Verify Email</a></p>`,
+    <p><a href="https://campus-sphere.onrender.com/verify/${token}">Verify Email</a></p>`,
   };
 
   sgMail.send(msg);
