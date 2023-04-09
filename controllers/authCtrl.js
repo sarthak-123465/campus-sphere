@@ -56,7 +56,7 @@ const authCtrl = {
         text: `Hi! There, You have recently visited 
 our website and entered your email.
 Please follow the given link to verify your email
-http://localhost:3000/verify/${token}
+https://campus-sphere.onrender.com/verify/${token}
 Thanks`
           
       }
@@ -120,7 +120,7 @@ Thanks`
         text: `Hi! There, you have sent a request
 to reset your password.
 Please follow the given link to set a new password
-http://localhost:3000/resetPassword/${token}
+https://campus-sphere.onrender.com/resetPassword/${token}
 Thanks`
           
       }

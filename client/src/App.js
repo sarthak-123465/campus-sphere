@@ -88,10 +88,10 @@ function App() {
               <Route exact path="/verify/:token" component={Verify} />
               <Route exact path="/forgotPassword" component={ForgotPassword} />
               <Route exact path="/resetPassword/:token" component={ResetPassword} />
-              {/* <div className="wrap_page"> */}
-                {/* <PrivateRouter exact path="/:page" component={PageRender} /> */}
-                {/* <PrivateRouter exact path="/:page/:id" component={PageRender} /> */}
-              {/* </div> */}
+              <div className="wrap_page">
+                <PrivateRouter exact path="/:page" component={PageRender} />
+                <PrivateRouter exact path="/:page/:id" component={PageRender} />
+              </div>
             </>
           )}
         </div>
