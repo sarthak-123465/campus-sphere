@@ -33,7 +33,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(userData)
     if (!userType) {
       dispatch(login(userData));
     } else {

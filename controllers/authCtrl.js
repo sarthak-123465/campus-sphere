@@ -48,6 +48,8 @@ const authCtrl = {
 
       const token = createAccessToken({ id: newUser._id });
 
+      const baseUrl = process.env.DEPLOY_URL || 'http://localhost:3000'
+
       const mailConfigurations = {
   
         from: process.env.EMAIL,    
@@ -56,7 +58,7 @@ const authCtrl = {
         text: `Hi! There, You have recently visited 
 our website and entered your email.
 Please follow the given link to verify your email
-https://campus-sphere.onrender.com/verify/${token}
+${baseUrl}/verify/${token}
 Thanks`
           
       }
@@ -112,6 +114,8 @@ Thanks`
 
       const token = createAccessToken({ id: user._id });
 
+      const baseUrl = process.env.DEPLOY_URL || 'http://localhost:3000'
+
       const mailConfigurations = {
   
         from: process.env.EMAIL,    
@@ -120,7 +124,7 @@ Thanks`
         text: `Hi! There, you have sent a request
 to reset your password.
 Please follow the given link to set a new password
-https://campus-sphere.onrender.com/resetPassword/${token}
+${baseUrl}/resetPassword/${token}
 Thanks`
           
       }

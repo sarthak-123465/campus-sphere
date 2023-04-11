@@ -1,1 +1,1 @@
-export const BASE_URL = "https://campus-sphere.onrender.com"
+export const BASE_URL = process.env.DEPLOY_URL || 'http://localhost:3000'
